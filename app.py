@@ -120,6 +120,14 @@ Upload your files on the sidebar.
 )
 
 with st.sidebar:
+    st.markdown(
+        """
+        Source Code:
+        [![GitHub](https://img.shields.io/badge/GitHub-Repository-blue?style=for-the-badge&logo=github)](https://github.com/nomadcoders/nc-gpt-challenge-5)
+        ---
+        """
+    )
+    
     api_key = st.text_input(
         "OpenAI API Key",
         type="password",
